@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bengluru House Price Prediction</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Square feet</label>
+    <input type="text" class="form-control" id="uisqft" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">BHK</label>
+    <input type="text" class="form-control" id="uibhk">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">No. of Bathrooms</label>
+    <input type="text" class="form-control" id="uibathrooms">
+  </div>
+  <div class="mb-3">
+    <select class="location" name="" id="uiLocations">
+      <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+  		<option>Electronic City</option>
+          <option>Rajaji Nagar</option>
+    </select>
+  </div>
+
+  <button type="button" onclick="onClickedEstimatePrice()" >Estimate Price</button>
+</form>
+
+<div id="uiestimatedprice"  class="result">
+  <h2></h2>
+</div>
+
+</body>
+
+</html>
